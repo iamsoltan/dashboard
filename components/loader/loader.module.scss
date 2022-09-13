@@ -1,0 +1,78 @@
+@use 'sass:math';
+
+.loader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  &__logo {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: scaling;
+    animation-timing-function: ease;
+    margin: 24px;
+  }
+  &__dotContainer {
+    display: flex;
+    margin: 24px;
+  }
+  &__dot {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: coloring;
+    animation-timing-function: ease;
+
+    background-color: #86a1bb;
+    border-radius: 12px;
+    height: 24px;
+    margin: 4px;
+    overflow: hidden;
+    width: 24px;
+    @for $i from 0 through 100 {
+      &--#{$i} {
+        // animation-delay: #{$i/6}s; 
+        animation-delay: #{math.div($i, 6)}s;
+      }
+    }
+
+    // ul:nth-child(3n + #{$i}) {
+    //   background-color: lighten($base-color, $i * 5%);
+    // }
+  }
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes coloring {
+  100% {
+    background-color: #d1e5fa;
+  }
+  60% {
+    background-color: #bfdefd;
+  }
+  45% {
+    background-color: #a2cefa;
+  }
+  30% {
+    background-color: #78b7f7;
+  }
+  15% {
+    background-color: #3e9bf8;
+  }
+  0% {
+    background-color: #1976d2;
+  }
+}

@@ -1,0 +1,84 @@
+.performance {
+  color: #fff;
+  background-color: #103848;
+  padding: 1rem 2rem 2rem;
+
+  &_title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 2rem;
+    padding: 0 0 1rem;
+    border-bottom: 1px solid #7a8c92;
+  }
+
+  &_indicators {
+    display: flex;
+    &_confirmed{
+      display: flex;
+      flex: 3;      
+      padding: 1rem;
+  }
+  &_refunds{
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    border-left: #7a8c92 1px solid;
+}
+  }
+
+  &_indicator {
+    flex: 1;
+    padding: 0 1rem;
+
+    &_number{
+      font-size: 3rem;
+      line-height: 1;
+  }
+    &_title {
+      font-size: 14px;
+      color: #00d795;
+      font-weight: 400;
+      margin: 0;
+    }
+    &_description {
+      color: #7a8c92;
+      font-size: 10px;
+      font-weight: 200;
+      margin: 0;
+    }
+  }
+
+  &_currency {
+    font-size: 12px;
+    margin-left: 0.2rem;
+    color: #7a8c92;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1024px) {
+  .performance {
+    &_indicators {
+      display: flex;
+      flex-direction: column;
+      &_confirmed{
+        display: flex;
+        flex-direction: column;
+        flex: 3;      
+        padding: 1rem;
+    }
+    &_refunds{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 1rem;
+      border-left:none;
+      border-top: 1px solid #7a8c92;
+  
+    }
+    }
+    &_indicator:not(:last-child)  {
+      margin-bottom: 2rem;
+    }
+  }
+}

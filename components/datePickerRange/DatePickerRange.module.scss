@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.outerWrapper {
+  border: 1px solid grey;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
+}
+.closeBtn {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
