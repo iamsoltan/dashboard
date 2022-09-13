@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../fonts/poppins/Poppins-Bold.ttf");
+  font-weight: 900;
+  font-display: block;
+}
+@font-face {
+  font-family: "Poppins Semibold";
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+  font-weight: 700;
+  font-display: block;
+}
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("../fonts/poppins/Poppins-Medium.ttf");
+  font-weight: 700;
+  font-display: block;
+}
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../fonts/poppins/Poppins-Light.ttf");
+  font-weight: 300;
+  font-display: block;
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+  font-weight: 500;
+  font-display: block;
+}
+@font-face {
+  font-family: "Cairo Bold";
+  src: url("../fonts/cairo/Cairo-Bold.ttf");
+  font-weight: 900;
+  font-display: block;
+}
+@font-face {
+  font-family: "Cairo Semibold";
+  src: url("../fonts/cairo/Cairo-SemiBold.ttf");
+  font-weight: 800;
+  font-display: block;
+}
+@font-face {
+  font-family: "Cairo Light";
+  src: url("../fonts/cairo/Cairo-Light.ttf");
+  font-weight: 600;
+  font-display: block;
+}
+@font-face {
+  font-family: "Cairo Regular";
+  src: url("../fonts/cairo/Cairo-Regular.ttf");
+  font-weight: 700;
+  font-display: block;
+}
+html[lang="ar"] {
+  direction: rtl;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  white-space: pre-line;
+  font-family: "Poppins Regular";
+  height: 100vh;
+}
+html > div,
+body > div {
+  height: 100%;
+}
+
+body.modal-opened {
+  overflow: hidden !important;
+}
+
+[dir="ltr"] * {
+  font-family: "Poppins Regular";
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+input:focus,
+textarea:focus,
+select:focus,
+video,
+video:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.card-number-frame,
+.expiry-date-frame,
+.cvv-frame {
+  height: 45px;
+  margin: 8px 16px;
+  width: 200px;
+  color: #2a2a2b;
+  border: 1px solid #343535;
+  border-radius: 6px;
+}
+
+@media (max-width: 546px) {
+  html,
+  body {
+    height: auto;
+  }
+  html > div,
+  body > div {
+    height: 100%;
+  }
+
+  .card-number-frame,
+  .expiry-date-frame,
+  .cvv-frame {
+    margin: 16px 8px;
+    width: 180px;
+    color: #2a2a2b;
+  }
+}
+.pay-btn {
+  background-color: #e6c300;
+  color: #fff;
+  padding: 8px 32px;
+  width: 130px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 24px auto;
+  cursor: pointer;
+}
+
+.paypal-btn {
+  margin: 24px auto;
+}
+
+input.expiry-date,
+input.cvv {
+  font-size: 17px;
+  height: 45px;
+  border: 1px solid #343535;
+  padding: 5px 16px;
+  border-radius: 6px;
+  color: #2a2a2b;
+  -webkit-text-fill-color: #2a2a2b;
+}
+
+.frame--invalid {
+  border-color: red;
+} /*# sourceMappingURL=globals.css.map */
