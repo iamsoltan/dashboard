@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 4px 0px 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  cursor: pointer;
+}
+.amountSection {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 40px 0px;
+  border-radius: 8px;
+  color: black;
+}
+.amount {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: baseline;
+
+  &_available {
+    opacity: 0.5;
+  }
+  &_currency {
+    // opacity: 0.7;
+  }
+  &_value {
+    padding-left: 10px;
+    font-size: 50px;
+    font-weight: 800;
+  }
+}
